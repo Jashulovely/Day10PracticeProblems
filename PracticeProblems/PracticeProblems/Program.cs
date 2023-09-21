@@ -15,7 +15,8 @@ namespace PracticeProblems
             {
                 Console.WriteLine("Enter your choice.\n   1   -->   Class and Object.\n   2   -->   Inheritance.\n" +
                     "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   5   -->   Abstraction.\n" +
-                    "   6   -->   Types of Variables.\n   7   -->   Types of Methods.\n   0   -->   QUIT");
+                    "   6   -->   Types of Variables.\n   7   -->   Types of Methods.\n   8   -->   Value and Reference Types.\n" +
+                    "   0   -->   QUIT");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -68,6 +69,13 @@ namespace PracticeProblems
                         methodTypes.Display();
                         methodTypes.DoSomething();
                         MethodTypes.Show();
+                        Console.ReadLine();
+                        break;
+                    case 8:
+                        ValueType valueType = new ValueType();
+                        ReferenceType referenceType = new ReferenceType();
+                        valueType.GetValue();
+                        referenceType.GetReference();
                         Console.ReadLine();
                         break;
                     case 0:
