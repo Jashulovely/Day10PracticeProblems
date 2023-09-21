@@ -14,7 +14,7 @@ namespace PracticeProblems
             while (interested)
             {
                 Console.WriteLine("Enter your choice.\n   1   -->   Class and Object.\n   2   -->   Inheritance.\n" +
-                    "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   0   -->   QUIT");
+                    "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   5   -->   Abstraction.\n   0   -->   QUIT");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -47,6 +47,12 @@ namespace PracticeProblems
                     case 4:
                         Encapsulation encapsulation = new Encapsulation();
                         encapsulation.Display();
+                        Console.ReadLine();
+                        break;
+                    case 5:
+                        Dog myDog = new Dog();
+                        myDog.AnimalSound();
+                        myDog.Sleep();
                         Console.ReadLine();
                         break;
                     case 0:

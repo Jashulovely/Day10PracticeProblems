@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="ChildClass.cs" />
+    <Compile Include="Dog.cs" />
     <Compile Include="Encapsulation.cs" />
     <Compile Include="ParentClass.cs" />
     <Compile Include="Polymorphism.cs" />
