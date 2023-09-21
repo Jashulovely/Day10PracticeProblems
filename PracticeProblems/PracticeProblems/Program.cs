@@ -15,7 +15,7 @@ namespace PracticeProblems
             {
                 Console.WriteLine("Enter your choice.\n   1   -->   Class and Object.\n   2   -->   Inheritance.\n" +
                     "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   5   -->   Abstraction.\n" +
-                    "   6   -->   Types of Variables.\n   0   -->   QUIT");
+                    "   6   -->   Types of Variables.\n   7   -->   Types of Methods.\n   0   -->   QUIT");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -59,6 +59,15 @@ namespace PracticeProblems
                     case 6:
                         VariableTypes variableTypes = new VariableTypes();
                         variableTypes.Display();
+                        Console.ReadLine();
+                        break;
+                    case 7:
+                        DerivedClass derivedClass = new DerivedClass();
+                        MethodTypes methodTypes = new MethodTypes();
+                        derivedClass.Do();
+                        methodTypes.Display();
+                        methodTypes.DoSomething();
+                        MethodTypes.Show();
                         Console.ReadLine();
                         break;
                     case 0:
