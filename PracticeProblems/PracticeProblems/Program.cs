@@ -16,7 +16,7 @@ namespace PracticeProblems
                 Console.WriteLine("Enter your choice.\n   1   -->   Class and Object.\n   2   -->   Inheritance.\n" +
                     "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   5   -->   Abstraction.\n" +
                     "   6   -->   Types of Variables.\n   7   -->   Types of Methods.\n   8   -->   Value and Reference Types.\n" +
-                    "   0   -->   QUIT");
+                    "   9   -->   Inheritance Types.\n   0   -->   QUIT");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -76,6 +76,25 @@ namespace PracticeProblems
                         ReferenceType referenceType = new ReferenceType();
                         valueType.GetValue();
                         referenceType.GetReference();
+                        Console.ReadLine();
+                        break;
+                    case 9:
+                        ChildSI childSI = new ChildSI();
+                        childSI.Debit();
+                        Console.WriteLine();
+                        HierarchicalInheritance hierarchicalInheritance = new HierarchicalInheritance();
+                        hierarchicalInheritance.Msg();
+                        A a = new A();  
+                        a.Info();
+                        B b = new B();  
+                        b.GetInfo();
+                        Console.WriteLine();
+                        MultiLevelInheritance multiLevelInheritance = new MultiLevelInheritance();
+                        multiLevelInheritance.Mammal();
+                        Human human = new Human();
+                        human.HumanDet();
+                        Predators predators = new Predators();
+                        predators.PredatorsDet();
                         Console.ReadLine();
                         break;
                     case 0:
