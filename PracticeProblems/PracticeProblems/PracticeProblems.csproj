@@ -52,6 +52,8 @@
     <Compile Include="Dog.cs" />
     <Compile Include="Encapsulation.cs" />
     <Compile Include="HierarchicalInheritance.cs" />
+    <Compile Include="ImplementedClass.cs" />
+    <Compile Include="InterfaceConcept.cs" />
     <Compile Include="MethodTypes.cs" />
     <Compile Include="MultiLevelInheritance.cs" />
     <Compile Include="ParentClass.cs" />

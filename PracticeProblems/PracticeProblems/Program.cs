@@ -16,7 +16,8 @@ namespace PracticeProblems
                 Console.WriteLine("Enter your choice.\n   1   -->   Class and Object.\n   2   -->   Inheritance.\n" +
                     "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   5   -->   Abstraction.\n" +
                     "   6   -->   Types of Variables.\n   7   -->   Types of Methods.\n   8   -->   Value and Reference Types.\n" +
-                    "   9   -->   Inheritance Types.\n   10   -->   Constructor types.\n   0   -->   QUIT");
+                    "   9   -->   Inheritance Types.\n   10   -->   Constructor types.\n   11   -->   Interface Concept.\n" +
+                    "   0   -->   QUIT");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -103,7 +104,14 @@ namespace PracticeProblems
                         ConstructorTypes ct;
                         ConstructorTypes.Demo();
                         ConstructorTypes copyCostr = new ConstructorTypes(parCostr);
-                        Console.ReadLine() ;
+                        Console.ReadLine();
+                        break;
+                    case 11:
+                        ImplementedClass implementedClass = new ImplementedClass();
+                        implementedClass.Display();
+                        implementedClass.Show();
+                        implementedClass.Demo();
+                        Console.ReadLine();
                         break;
                     case 0:
                         interested = false;
