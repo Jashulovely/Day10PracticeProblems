@@ -17,7 +17,7 @@ namespace PracticeProblems
                     "   3   -->   Polymorphism.\n   4   -->   Encapsulation.\n   5   -->   Abstraction.\n" +
                     "   6   -->   Types of Variables.\n   7   -->   Types of Methods.\n   8   -->   Value and Reference Types.\n" +
                     "   9   -->   Inheritance Types.\n   10   -->   Constructor types.\n   11   -->   Interface Concept.\n" +
-                    "   0   -->   QUIT");
+                    "   12   -->   Access Modifiers.\n   0   -->   QUIT");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -111,6 +111,14 @@ namespace PracticeProblems
                         implementedClass.Display();
                         implementedClass.Show();
                         implementedClass.Demo();
+                        Console.ReadLine();
+                        break;
+                    case 12:
+                        AccessModifiers accessModifiers = new AccessModifiers();
+                        ChildAM childAM = new ChildAM();
+                        accessModifiers.PublicAM();
+                        accessModifiers.InternalAM();
+                        childAM.ChildMethod();
                         Console.ReadLine();
                         break;
                     case 0:

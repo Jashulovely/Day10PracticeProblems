@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClass.cs" />
+    <Compile Include="AccessModifiers.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="BaseClass.cs" />
+    <Compile Include="ChildAM.cs" />
     <Compile Include="ChildClass.cs" />
     <Compile Include="ConstructorTypes.cs" />
     <Compile Include="DerivedClass.cs" />
