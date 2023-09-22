@@ -47,6 +47,7 @@
     <Compile Include="Animal.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="ChildClass.cs" />
+    <Compile Include="ConstructorTypes.cs" />
     <Compile Include="DerivedClass.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Encapsulation.cs" />
